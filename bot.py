@@ -15,10 +15,13 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.author == client.user
+    if message.author == client.user:
         return
     
-    if message.content.startswith(':grimacing:Alex'):
-        await message.channel.send('Alex is a noob')
+    if message.content.startswith('$Alex'):
+        await message.channel.send(':grimacing:')
+
+    if message.content.content(':grimacing:'):
+        await message.channel.send('Agreed')
 
 client.run(TOKEN)
