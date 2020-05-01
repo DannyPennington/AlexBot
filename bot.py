@@ -9,9 +9,11 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
 
+
 @client.event
 async def on_ready():
     print(f'{client.user} is here to fuck shit up')
+
 
 @client.event
 async def on_message(message):
